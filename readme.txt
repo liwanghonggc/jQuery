@@ -8,3 +8,19 @@
 
       $("#center").eq(index)  --> jq对象
       $("#center").get(index) --> js对象
+
+3、index()方法会返回当前元素在所有兄弟元素里面的索引
+
+4、jQuery基本操作
+   1) 操作样式
+      css(name, value)
+      $("li").addClass("basic");
+      $("li").removeClass("bigger");
+      $("li").toggleClass("basic");
+
+   2) 操作属性
+      attr(name, value)
+
+   3) 操作动画
+
+   4) 节点操作
