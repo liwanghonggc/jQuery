@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<!--如果要兼容IE678浏览器,使用jquery-1.12版本-->
+<script src="js/jquery-1.12.4.js"></script>
+
+<script>
+
+    //js的入口函数执行要比jQuery的入口函数执行得晚一些。
+    //jq的入口函数会等待页面的加载完成才执行，但是不会等待图片的加载。
+    //js的入口函数会等待页面加载完成，并且等待图片加载完成才开始执行。
+
+    window.onload = function () {
+        console.log("我是js的入口函数");
+    };
+
+    //认识
+    $(document).ready(function () {
+        console.log("这是jQuery入口函数的第一种写法");
+    });
+
+
+    $(function () {
+        console.log("这是jQuery入口函数的第二种写法");
+    });
+</script>
+
+</body>
+</html>
