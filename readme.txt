@@ -5,3 +5,6 @@
 2、各种选择器
    1) 筛选选择器
       $("li").children(),见下拉菜单案例
+
+      $("#center").eq(index)  --> jq对象
+      $("#center").get(index) --> js对象
