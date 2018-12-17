@@ -25,5 +25,10 @@
       因此,对于布尔类型的属性,不要用attr方法,应该使用prop方法,它用法和attr一样,prop("checked", true)
 
    3) 操作动画
+      3.1) 三组基本动画
+      显示show、隐藏hide,不传参数无动画效果,可以传入参数speed、回调函数callback
+
+      滑入slideUp、滑出slideDown、切换slideToggle
+      淡入fadeIn、淡出fadeOut、切换fadeToggle
 
    4) 节点操作
