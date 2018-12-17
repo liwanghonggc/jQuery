@@ -41,4 +41,15 @@
         console.log("ha");
       });
 
+      动画队列
+        $("#btn").click(function () {
+            //把这些动画存储到一个动画队列里面,一个接一个执行
+            $("div").animate({left:800})
+              .animate({top:400})
+              .animate({width:300,height:300})
+              .animate({top:0})
+              .animate({left:0})
+              .animate({width:100,height:100})
+          })
+
    4) 节点操作
