@@ -21,6 +21,9 @@
    2) 操作属性
       attr(name, value)
 
+      attr("checked", true)失效,jQuery1.6版本之后若没有设置该属性attr返回undefined,而checked应该返回false
+      因此,对于布尔类型的属性,不要用attr方法,应该使用prop方法,它用法和attr一样,prop("checked", true)
+
    3) 操作动画
 
    4) 节点操作
