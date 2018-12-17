@@ -24,7 +24,7 @@
       attr("checked", true)失效,jQuery1.6版本之后若没有设置该属性attr返回undefined,而checked应该返回false
       因此,对于布尔类型的属性,不要用attr方法,应该使用prop方法,它用法和attr一样,prop("checked", true)
 
-   3) 操作动画
+   3) 操作动画,见京东轮播图案例
       3.1) 三组基本动画
       显示show、隐藏hide,不传参数无动画效果,可以传入参数speed、回调函数callback
       $("div").show(1000, function(){
@@ -34,5 +34,11 @@
       滑入slideUp、滑出slideDown、切换slideToggle,用法和show一样,不传参数默认也有动画
 
       淡入fadeIn、淡出fadeOut、切换fadeToggle
+
+      3.2) 自定义动画,见手风琴案例
+      linear:线性 匀速
+      $("#box3").animate({left:800}, 8000, "linear", function () {
+        console.log("ha");
+      });
 
    4) 节点操作
