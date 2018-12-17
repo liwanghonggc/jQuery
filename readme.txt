@@ -27,8 +27,12 @@
    3) 操作动画
       3.1) 三组基本动画
       显示show、隐藏hide,不传参数无动画效果,可以传入参数speed、回调函数callback
+      $("div").show(1000, function(){
 
-      滑入slideUp、滑出slideDown、切换slideToggle
+      });
+
+      滑入slideUp、滑出slideDown、切换slideToggle,用法和show一样,不传参数默认也有动画
+
       淡入fadeIn、淡出fadeOut、切换fadeToggle
 
    4) 节点操作
