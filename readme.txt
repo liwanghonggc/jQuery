@@ -63,3 +63,10 @@
                  $("audio").get(idx).play();
 
    4) 节点操作
+      添加节点 append、prepend、appendTo、prependTo、after、before
+      清空一个元素的内容: $("div").html("")  --> 清除内容,但不会清除事件,内存泄露
+                        $("div").empty()   --> 清空内容,自己还留着
+                        $("div").remove()  --> 全删,自己也没了
+
+      克隆 $("div").clone(true)  false,不传参数是深复制,不会复制事件
+                                 true,深复制,会复制事件,jQuery默认就是深复制,浅复制没有意义
