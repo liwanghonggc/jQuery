@@ -87,5 +87,23 @@
       console.log($("div").outerWidth());      //padding+width+border
       console.log($("div").outerWidth(true));  //padding+width+border+margin
 
+      获取元素相对于document的位置
+      $("div").offset();
+
+      获取元素相对于有定位的父元素的位置
+      $("div").position();
+
    2) 对应scroll系列
       $(window).scrollTop();
+
+6、事件处理机制
+   1) 简单事件,给自己注册的事件
+      $("div").click(function(){});
+
+   2) 代理委托事件,但是最终不是它来执行,而是由p来执行
+      第一个参数selector,事件最终由谁来执行
+      $("div").delegate("p", "click", function(){});
+
+   3) on注册事件
+      $("div").on("click", "p", function(){});  --> 委托事件
+      $("div").on("click", function(){});       --> 简单事件
