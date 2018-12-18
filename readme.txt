@@ -53,5 +53,13 @@
           })
 
       stop停止当前正在执行的动画,写在前面停其他动画让自己动画执行
+      stop的两个参数: clearQueue,是否清楚动画队列,true or false
+                     jumpToEnd,是否跳转到当前动画的最终效果
+
+      音乐播放:   var idx = $(this).index();
+                 //让对应的音乐播放,音乐播放的方法时DOM对象
+                 //audio、video标签,jQuery没有提供封装,因此获取的是DOM对象,不能使用eq方法
+                 $("audio").get(idx).load();
+                 $("audio").get(idx).play();
 
    4) 节点操作
