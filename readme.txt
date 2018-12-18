@@ -70,3 +70,22 @@
 
       克隆 $("div").clone(true)  false,不传参数是深复制,不会复制事件
                                  true,深复制,会复制事件,jQuery默认就是深复制,浅复制没有意义
+
+5、jQuery对应的三大家族系列
+   1) 对应offset系列
+      $("div").width()       --> 获取高度
+      $("div").width(400)    --> 设置高度
+
+      获取页面可视区域的宽高
+      $(window).resize(function(){
+        console.log($(window).width());
+        console.log($(window).height());
+      });
+
+      console.log($("div").width());           //width,就是获取的width的值
+      console.log($("div").innerWidth());      //padding+width
+      console.log($("div").outerWidth());      //padding+width+border
+      console.log($("div").outerWidth(true));  //padding+width+border+margin
+
+   2) 对应scroll系列
+      $(window).scrollTop();
