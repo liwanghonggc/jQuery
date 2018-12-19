@@ -131,6 +131,18 @@
         alert("百度");
 
         //阻止浏览器默认行为,这里是指浏览器跳转
-        //return false; --> 也行
+        //return false; --> 既能阻止事件冒泡,也能阻止浏览器的默认行为
         e.preventDefault();
       });
+
+      e.stopPropagation();
+
+8、链式编程
+   设置性操作:可以链式编程
+   获取性操作,不能链式,因为获取性操作(数值、字符串)
+   返回值是不是一个jq对象
+
+9、each方法
+   $("li").each(function (index, element) {
+     $(element).css("opacity", (index + 1) / 10);
+   })
