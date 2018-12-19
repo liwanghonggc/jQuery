@@ -146,3 +146,13 @@
    $("li").each(function(index, element) {
      $(element).css("opacity", (index + 1) / 10);
    })
+
+10、$冲突
+   jQuery释放$的控制权
+
+   //这样$$就有了$的功能
+   var $$ = $.noConflict();
+
+   jQuery(function(){
+
+   });
