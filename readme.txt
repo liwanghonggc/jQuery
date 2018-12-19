@@ -114,3 +114,23 @@
    5) 触发事件
       $("p").trigger("click");
       $("p").click();
+
+7、jQuery事件处理对象
+   它对JS的事件处理对象做了封装,可以不用考虑兼容性
+
+   1) e.data
+      $("div").on("click", 100, function(e){
+        //e就是事件处理对象
+        e.data,可以获取100这个传入的值
+      });
+
+   2) 阻止事件冒泡和浏览器的默认行为
+      <a href="http://www.baidu.com" id="link">百度</a>
+
+      $("#link").on("click", function(e){
+        alert("百度");
+
+        //阻止浏览器默认行为,这里是指浏览器跳转
+        //return false; --> 也行
+        e.preventDefault();
+      });
