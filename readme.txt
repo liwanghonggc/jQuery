@@ -143,6 +143,6 @@
    返回值是不是一个jq对象
 
 9、each方法
-   $("li").each(function (index, element) {
+   $("li").each(function(index, element) {
      $(element).css("opacity", (index + 1) / 10);
    })
